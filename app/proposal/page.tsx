@@ -31,14 +31,15 @@ export default function ProposalPage() {
       <Navbar />
       <main>
         {/* Header */}
-        <section className="bg-[#1E2A3A] hero-grid pt-36 pb-16">
-          <div className="mx-auto max-w-7xl px-6">
+        <section className="relative bg-[#0F1923] pt-36 pb-16 overflow-hidden">
+          <div className="hero-grid-bg" aria-hidden="true" />
+          <div className="relative mx-auto max-w-7xl px-6">
             <ScrollReveal>
               <p className="text-xs font-semibold uppercase tracking-widest text-[#00C8E8] mb-3">Free &amp; No Obligation</p>
-              <h1 className="text-4xl sm:text-5xl font-bold text-white text-balance max-w-2xl leading-tight mb-4">
+              <h1 className="font-heading text-4xl sm:text-5xl font-bold text-white text-balance max-w-2xl leading-tight mb-4">
                 Get your free website proposal
               </h1>
-              <p className="text-white/70 text-lg max-w-xl">
+              <p className="text-[#94A3B8] text-lg max-w-xl">
                 {"Pick a time below and we'll build a working demo of your new site before the call — no cost, no commitment."}
               </p>
             </ScrollReveal>
@@ -46,22 +47,22 @@ export default function ProposalPage() {
         </section>
 
         {/* Main content */}
-        <section className="bg-white py-20">
-          <div className="mx-auto max-w-7xl px-6">
-            <div className="grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-16 items-start">
+        <section className="bg-[#0F1923] py-20">
+          <div className="mx-auto max-w-[1480px] px-16">
+            <div className="grid grid-cols-1 xl:grid-cols-[300px_1fr] gap-12 items-start">
 
               {/* Left: Info */}
               <div className="flex flex-col gap-10">
                 <ScrollReveal>
                   <div>
-                    <h2 className="text-xl font-bold text-[#1E2A3A] mb-6">What to expect</h2>
+                    <h2 className="font-heading text-xl font-bold text-white mb-6">What to expect</h2>
                     <ol className="flex flex-col gap-4">
                       {steps.map((step) => (
                         <li key={step.num} className="flex items-start gap-4">
-                          <div className="flex items-center justify-center w-8 h-8 rounded-full bg-[#1E2A3A] border-2 border-[#00C8E8] shrink-0">
-                            <span className="text-xs font-bold text-[#00C8E8]">{step.num}</span>
+                          <div className="flex items-center justify-center w-8 h-8 rounded-full bg-[#00C8E8] shrink-0">
+                            <span className="text-xs font-bold text-[#0F1923]">{step.num}</span>
                           </div>
-                          <span className="text-[#1E2A3A] leading-relaxed pt-1">{step.label}</span>
+                          <span className="text-[#94A3B8] leading-relaxed pt-1">{step.label}</span>
                         </li>
                       ))}
                     </ol>
@@ -69,12 +70,12 @@ export default function ProposalPage() {
                 </ScrollReveal>
 
                 <ScrollReveal delay={100}>
-                  <div className="rounded-lg bg-[#F8FAFC] border border-[#E2E8F0] p-6 flex flex-col gap-4">
-                    <h3 className="text-sm font-bold text-[#1E2A3A] uppercase tracking-widest">Why VKTech</h3>
+                  <div className="rounded-lg bg-[#1E2A3A] border border-[#00C8E8]/12 border-l-4 border-l-[#00C8E8] p-6 flex flex-col gap-4">
+                    <h3 className="text-xs font-bold text-[#00C8E8] uppercase tracking-widest">Why VKTech</h3>
                     {trust.map((item) => (
                       <div key={item.text} className="flex items-center gap-3">
                         <item.icon className="w-4 h-4 text-[#00C8E8] shrink-0" aria-hidden="true" />
-                        <span className="text-sm text-[#64748B]">{item.text}</span>
+                        <span className="text-sm text-[#94A3B8]">{item.text}</span>
                       </div>
                     ))}
                   </div>
@@ -85,7 +86,7 @@ export default function ProposalPage() {
                     <p className="text-sm text-[#64748B]">Prefer to reach out first?</p>
                     <a
                       href="mailto:Chad@vktechservice.com"
-                      className="text-sm font-semibold text-[#00C8E8] hover:underline"
+                      className="text-sm font-semibold text-[#00C8E8] hover:underline underline-offset-2"
                     >
                       Chad@vktechservice.com
                     </a>
@@ -95,7 +96,9 @@ export default function ProposalPage() {
 
               {/* Right: Calendly embed */}
               <ScrollReveal>
-                <CalendlyEmbed />
+                <div className="rounded-lg bg-[#1E2A3A] border border-[#00C8E8]/12 overflow-hidden">
+                  <CalendlyEmbed />
+                </div>
               </ScrollReveal>
             </div>
           </div>

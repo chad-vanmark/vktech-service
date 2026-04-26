@@ -1,11 +1,19 @@
 import type { Metadata } from 'next'
-import { Outfit } from 'next/font/google'
+import { Syne, DM_Sans } from 'next/font/google'
 import './globals.css'
 
-const outfit = Outfit({
+const syne = Syne({
   subsets: ['latin'],
-  variable: '--font-outfit',
+  variable: '--font-syne',
   display: 'swap',
+  weight: ['400', '500', '600', '700', '800'],
+})
+
+const dmSans = DM_Sans({
+  subsets: ['latin'],
+  variable: '--font-dm-sans',
+  display: 'swap',
+  weight: ['300', '400', '500', '600'],
 })
 
 export const metadata: Metadata = {
@@ -38,7 +46,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${outfit.variable} bg-background`}>
+    <html lang="en" className={`${syne.variable} ${dmSans.variable} bg-[#0F1923]`}>
       <body className="font-sans antialiased">{children}</body>
     </html>
   )

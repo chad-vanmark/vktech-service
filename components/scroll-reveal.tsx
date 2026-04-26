@@ -19,8 +19,8 @@ export default function ScrollReveal({ children, className = '', delay = 0 }: Sc
       ([entry]) => {
         if (entry.isIntersecting) {
           el.style.transitionDelay = `${delay}ms`
-          el.classList.add('section-visible')
-          el.classList.remove('section-hidden')
+          el.classList.add('reveal-visible')
+          el.classList.remove('reveal-hidden')
           observer.unobserve(el)
         }
       },
@@ -32,7 +32,7 @@ export default function ScrollReveal({ children, className = '', delay = 0 }: Sc
   }, [delay])
 
   return (
-    <div ref={ref} className={`section-hidden ${className}`}>
+    <div ref={ref} className={`reveal-hidden ${className}`}>
       {children}
     </div>
   )
