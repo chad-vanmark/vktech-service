@@ -58,7 +58,7 @@ export default function AboutPage() {
                   A real developer, not an agency.
                 </h1>
                 <p className="text-[#94A3B8] text-lg leading-relaxed mb-4">
-                  10+ years of backend development and complex system architecture. Spent years doing contract work for businesses — building the systems behind the scenes that power serious companies.
+                  10+ years of backend development and complex system architecture. Built the systems behind the scenes that power serious companies — from AWS infrastructure to AI integrations to high-traffic web applications.
                 </p>
                 <p className="text-[#94A3B8] text-lg leading-relaxed mb-4">
                   Now bringing that same technical depth to local businesses who deserve more than a drag-and-drop template and a support ticket.
@@ -68,32 +68,76 @@ export default function AboutPage() {
                 </p>
               </ScrollReveal>
 
-              {/* Headshot placeholder */}
+              {/* Network graph graphic */}
               <ScrollReveal delay={100}>
-                <div className="flex justify-center lg:justify-end">
-                  <div className="relative w-64 h-64 sm:w-72 sm:h-72">
-                    {/* Rotating conic gradient ring */}
-                    <div className="headshot-ring" aria-hidden="true" />
-                    <div className="headshot-ring-mask" aria-hidden="true" />
-                    {/* Avatar content */}
-                    <div
-                      className="relative z-10 w-full h-full rounded-full bg-[#00C8E8]/5 flex items-center justify-center overflow-hidden"
-                      style={{ boxShadow: '0 0 32px rgba(0,200,232,0.2)' }}
-                      aria-label="Founder headshot placeholder"
-                    >
-                      <div className="flex flex-col items-center gap-3">
-                        <svg viewBox="0 0 80 80" fill="none" className="w-20 h-20 opacity-30" aria-hidden="true">
-                          <path d="M12 18 L32 62 L40 46" stroke="#00C8E8" strokeWidth="5" strokeLinecap="round" strokeLinejoin="round"/>
-                          <path d="M40 46 L68 18" stroke="#00C8E8" strokeWidth="5" strokeLinecap="round" strokeLinejoin="round"/>
-                          <path d="M40 46 L68 62" stroke="#00C8E8" strokeWidth="5" strokeLinecap="round" strokeLinejoin="round"/>
-                        </svg>
-                        <span className="text-sm text-white/25 font-medium">Photo coming soon</span>
-                      </div>
-                    </div>
-                    {/* Outer halo rings */}
-                    <div className="absolute -inset-5 rounded-full border border-[#00C8E8]/8 pointer-events-none" aria-hidden="true" />
-                    <div className="absolute -inset-10 rounded-full border border-[#00C8E8]/4 pointer-events-none" aria-hidden="true" />
-                  </div>
+                <div className="flex justify-center lg:justify-end" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 420 340"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="w-full max-w-md opacity-90"
+                  >
+                    <style>{`
+                      @keyframes nodePulse {
+                        0%, 100% { opacity: 0.9; r: 7; }
+                        50% { opacity: 0.4; r: 5; }
+                      }
+                      @keyframes nodePulseSlow {
+                        0%, 100% { opacity: 0.6; r: 5; }
+                        50% { opacity: 0.2; r: 3.5; }
+                      }
+                      @keyframes lineFlicker {
+                        0%, 100% { opacity: 0.25; }
+                        50% { opacity: 0.08; }
+                      }
+                      .n1 { animation: nodePulse 3.2s ease-in-out infinite; }
+                      .n2 { animation: nodePulse 2.8s ease-in-out infinite 0.4s; }
+                      .n3 { animation: nodePulse 3.6s ease-in-out infinite 0.8s; }
+                      .n4 { animation: nodePulseSlow 4s ease-in-out infinite 0.2s; }
+                      .n5 { animation: nodePulseSlow 3.4s ease-in-out infinite 1s; }
+                      .n6 { animation: nodePulse 2.6s ease-in-out infinite 1.4s; }
+                      .n7 { animation: nodePulseSlow 3.8s ease-in-out infinite 0.6s; }
+                      .n8 { animation: nodePulseSlow 4.2s ease-in-out infinite 1.2s; }
+                      .n9 { animation: nodePulse 3s ease-in-out infinite 0.9s; }
+                      .l { animation: lineFlicker 4s ease-in-out infinite; }
+                      .l2 { animation: lineFlicker 5s ease-in-out infinite 1s; }
+                      .l3 { animation: lineFlicker 3.5s ease-in-out infinite 0.5s; }
+                    `}</style>
+
+                    {/* Connecting lines */}
+                    <line className="l"  x1="210" y1="170" x2="90"  y2="80"  stroke="#00C8E8" strokeWidth="1"/>
+                    <line className="l2" x1="210" y1="170" x2="330" y2="80"  stroke="#00C8E8" strokeWidth="1"/>
+                    <line className="l"  x1="210" y1="170" x2="80"  y2="260" stroke="#00C8E8" strokeWidth="1"/>
+                    <line className="l3" x1="210" y1="170" x2="340" y2="260" stroke="#00C8E8" strokeWidth="1"/>
+                    <line className="l2" x1="210" y1="170" x2="210" y2="40"  stroke="#00C8E8" strokeWidth="1"/>
+                    <line className="l"  x1="210" y1="170" x2="50"  y2="170" stroke="#00C8E8" strokeWidth="1"/>
+                    <line className="l3" x1="210" y1="170" x2="370" y2="170" stroke="#00C8E8" strokeWidth="1"/>
+                    <line className="l2" x1="210" y1="170" x2="210" y2="310" stroke="#00C8E8" strokeWidth="1"/>
+                    <line className="l"  x1="90"  y1="80"  x2="210" y2="40"  stroke="#00C8E8" strokeWidth="0.5"/>
+                    <line className="l3" x1="330" y1="80"  x2="210" y2="40"  stroke="#00C8E8" strokeWidth="0.5"/>
+                    <line className="l2" x1="90"  y1="80"  x2="50"  y2="170" stroke="#00C8E8" strokeWidth="0.5"/>
+                    <line className="l"  x1="330" y1="80"  x2="370" y2="170" stroke="#00C8E8" strokeWidth="0.5"/>
+                    <line className="l3" x1="80"  y1="260" x2="50"  y2="170" stroke="#00C8E8" strokeWidth="0.5"/>
+                    <line className="l2" x1="340" y1="260" x2="370" y2="170" stroke="#00C8E8" strokeWidth="0.5"/>
+                    <line className="l"  x1="80"  y1="260" x2="210" y2="310" stroke="#00C8E8" strokeWidth="0.5"/>
+                    <line className="l3" x1="340" y1="260" x2="210" y2="310" stroke="#00C8E8" strokeWidth="0.5"/>
+
+                    {/* Primary node — center */}
+                    <circle className="n1" cx="210" cy="170" r="7" fill="#00C8E8"/>
+                    <circle cx="210" cy="170" r="14" fill="none" stroke="#00C8E8" strokeWidth="0.5" opacity="0.2"/>
+
+                    {/* Secondary nodes */}
+                    <circle className="n2" cx="90"  cy="80"  r="5" fill="#00C8E8" opacity="0.8"/>
+                    <circle className="n3" cx="330" cy="80"  r="5" fill="#00C8E8" opacity="0.8"/>
+                    <circle className="n6" cx="80"  cy="260" r="5" fill="#00C8E8" opacity="0.8"/>
+                    <circle className="n9" cx="340" cy="260" r="5" fill="#00C8E8" opacity="0.8"/>
+
+                    {/* Tertiary nodes */}
+                    <circle className="n4" cx="210" cy="40"  r="4" fill="#00C8E8" opacity="0.5"/>
+                    <circle className="n5" cx="50"  cy="170" r="4" fill="#00C8E8" opacity="0.5"/>
+                    <circle className="n7" cx="370" cy="170" r="4" fill="#00C8E8" opacity="0.5"/>
+                    <circle className="n8" cx="210" cy="310" r="4" fill="#00C8E8" opacity="0.5"/>
+                  </svg>
                 </div>
               </ScrollReveal>
             </div>
