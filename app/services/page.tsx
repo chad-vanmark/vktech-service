@@ -64,7 +64,7 @@ export default function ServicesPage() {
                   </div>
                   <ul className="flex flex-col gap-3">
                     {[
-                      '3–5 custom pages',
+                      'Upto 5 custom pages',
                       'Mobile-first, fully responsive',
                       'Contact form',
                       'Google Maps embed',
@@ -103,7 +103,7 @@ export default function ServicesPage() {
                   </div>
                   <ul className="flex flex-col gap-3">
                     {[
-                      '5–8 custom pages',
+                      'Upto 8 custom pages',
                       'Everything in Starter',
                       'Blog / CMS integration',
                       'SEO-optimised throughout',
