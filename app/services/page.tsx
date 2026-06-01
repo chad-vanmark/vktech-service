@@ -137,9 +137,12 @@ export default function ServicesPage() {
                 <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-6">
                   <div>
                     <h3 className="font-heading text-lg font-bold text-white mb-1">Hosting &amp; Maintenance</h3>
-                    <p className="text-[#94A3B8] text-sm">Your site stays live, secure, and fast.</p>
+                    <p className="text-[#94A3B8] text-sm">Your site stays live, secure, and fast — plans from $29/mo.</p>
                   </div>
-                  <span className="shrink-0 rounded-full bg-[#00C8E8]/10 border border-[#00C8E8]/25 px-4 py-1.5 text-base font-bold text-[#00C8E8] self-start">$40/mo</span>
+                  <div className="shrink-0 self-start text-right">
+                    <p className="text-base font-bold text-[#00C8E8]">Starting at $29/mo</p>
+                    <p className="text-xs text-[#94A3B8] mt-1 max-w-[200px]">Plans available for every budget — basic hosting to fully managed with support included.</p>
+                  </div>
                 </div>
                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
                   {[
@@ -164,8 +167,11 @@ export default function ServicesPage() {
               <div className="rounded-lg bg-[#1A2332] border border-[#00C8E8]/10 p-8">
                 <h3 className="font-heading text-lg font-bold text-white mb-6">Add-ons</h3>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                  <div className="rounded border border-[#00C8E8]/10 bg-[#0F1923] p-4 flex flex-col gap-1 sm:col-span-3">
+                    <span className="text-sm text-white/70">Content updates &amp; support</span>
+                    <span className="text-xs text-[#94A3B8]">Included in Managed and Premium hosting plans. Available à la carte on Basic hosting from $125/hr.</span>
+                  </div>
                   {[
-                    { label: 'Monthly content updates', price: '$50–100/mo' },
                     { label: 'SEO audit (one-time)', price: '$300–500' },
                     { label: 'Google Business Profile setup', price: '$150–300 (one-time)' },
                   ].map((addon) => (
@@ -202,9 +208,15 @@ export default function ServicesPage() {
                   body: 'Custom portals, booking systems, dashboards, and interactive features built to your exact specs.',
                 },
                 {
+                  id: 'seo-retainer',
+                  title: 'Ongoing SEO retainer',
+                  price: '$500 – $1,200/mo',
+                  body: 'Monthly content, technical SEO, and link-building to keep your rankings climbing.',
+                },
+                {
                   id: 'backend-api',
                   title: 'Backend / API integrations',
-                  price: '$100 – $150/hr',
+                  price: '$125/hr',
                   body: 'Connect your website to CRMs, payment processors, inventory systems, or any third-party API.',
                 },
               ].map((item, i) => (
@@ -276,7 +288,7 @@ export default function ServicesPage() {
                 },
                 {
                   title: 'Fractional CTO / tech advisor',
-                  price: '$150 – $250/hr',
+                  price: '$200/hr',
                   body: 'On-call technical leadership for companies that need a senior engineer without a full-time hire.',
                 },
               ].map((item, i) => (
