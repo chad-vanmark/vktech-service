@@ -42,16 +42,16 @@ const services = [
   },
   {
     icon: Search,
-    title: 'Web SEO',
+    title: 'SEO Audit',
     body: 'Get found on Google by people in your area who are already looking for you.',
-    price: 'Starting at $300',
+    price: '$300-500',
     href: '/services#seo',
     featured: false,
   },
   {
     icon: Bot,
-    title: 'AI Integrations',
-    body: 'Chatbots, automation, and smart tools that save your team hours every week.',
+    title: 'Custom Web Apps',
+    body: 'Portals, booking systems, dashboards, and custom functionality built to your specs.',
     price: 'Starting at $1,500',
     href: '/services#ai',
     featured: false,
@@ -60,7 +60,7 @@ const services = [
     icon: Server,
     title: 'Systems & Consulting',
     body: 'Complex backend architecture, AWS infrastructure, and technical strategy.',
-    price: '$100–150/hr',
+    price: '$125/hr',
     href: '/services#consulting',
     featured: false,
   },
@@ -85,9 +85,9 @@ const steps = [
 ]
 
 const trustStats = [
-  { value: '10+', label: 'Years of backend experience', icon: Code2 },
+  { value: '10+', label: 'Years of development experience', icon: Code2 },
   { value: '100%', label: 'Hosting managed by us', icon: Server },
-  { value: 'SC', label: 'Local to Upstate South Carolina', icon: MapPin },
+  { value: 'Mars & 9Round', label: 'Enterprise clients served', icon: MapPin },
 ]
 
 export default function HomePage() {
@@ -130,7 +130,7 @@ export default function HomePage() {
               {/* Location badge */}
               <div className="anim-0 inline-flex items-center gap-2 rounded-full border border-[#00C8E8]/25 bg-[#00C8E8]/8 px-4 py-1.5 mb-8">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#00C8E8] animate-pulse" aria-hidden="true" />
-                <span className="text-xs font-semibold text-[#00C8E8] tracking-wide">Greenville, SC &mdash; Upstate South Carolina</span>
+                <span className="text-xs font-semibold text-[#00C8E8] tracking-wide">Greenville, SC &middot; Upstate South Carolina</span>
               </div>
 
               {/* Headline */}
@@ -142,7 +142,7 @@ export default function HomePage() {
 
               {/* Subheadline */}
               <p className="anim-2 text-lg sm:text-xl text-[#94A3B8] leading-relaxed max-w-2xl mb-10">
-                Real developer. Real results. No templates, no agencies &mdash; just clean code built for your business.
+                Real developer. Real results. No templates, no agencies. Just clean code built for your business.
               </p>
 
               {/* CTAs */}
@@ -350,7 +350,7 @@ export default function HomePage() {
             <ScrollReveal>
               <div className="inline-block w-10 h-px bg-[#00C8E8] mb-10" aria-hidden="true" />
               <h2 className="font-heading text-4xl sm:text-5xl font-bold text-white text-balance mb-6 max-w-2xl mx-auto">
-                Get a free website proposal &mdash; no obligation.
+                Get a free website proposal. No obligation.
               </h2>
               <p className="text-[#94A3B8] text-lg leading-relaxed max-w-xl mx-auto mb-10">
                 {"We'll research your business, build a working demo of your new site, and show it to you for free. If you love it, we talk price."}

@@ -113,6 +113,7 @@ export default function ServicesPage() {
                       'Review display integration',
                       'Performance-tuned build',
                       'Blog or news section (optional)',
+                      '2 rounds of revisions included',
                     ].map((item) => (
                       <li key={item} className="flex items-center gap-3 text-white/80 text-sm">
                         <Check className="w-4 h-4 text-[#00C8E8] shrink-0" aria-hidden="true" />
@@ -157,7 +158,6 @@ export default function ServicesPage() {
                     <p className="text-[#94A3B8] text-sm">Overage work billed at $125/hr.</p>
                   </div>
                 </div>
-                <p className="text-[#94A3B8] text-sm mb-3">Annual plans save you money vs monthly. Ask about 3-year plans for maximum savings.</p>
                 <p className="text-[#94A3B8] text-sm mb-6">Pay annually and save. Starter $299/yr, Managed $799/yr, Premium $1,499/yr.</p>
                 <p className="text-[#94A3B8] text-sm">No Wix fees. No GoDaddy fees. No platform lock-in.</p>
               </div>
@@ -257,7 +257,7 @@ export default function ServicesPage() {
                 Technical consulting
               </h2>
               <p className="text-[#94A3B8] text-lg mb-4 max-w-2xl">
-                Systems architecture, AI strategy, AWS optimization, for companies that need real technical depth.
+                Systems architecture, AI strategy, AWS optimization. For companies that need real technical depth.
               </p>
               <p className="text-[#00C8E8] text-base font-medium italic mb-16">
                 &ldquo;You&apos;re paying for 10 years of hard-won experience, not just hours.&rdquo;
