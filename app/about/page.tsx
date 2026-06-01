@@ -141,7 +141,7 @@ export default function AboutPage() {
               <ScrollReveal>
                 <div className="flex flex-col gap-5 rounded-lg bg-[#0F1923] border border-[#00C8E8]/15 border-l-4 border-l-[#00C8E8] p-8 hover:shadow-[0_0_20px_rgba(0,200,232,0.08)] transition-all duration-300">
                   <h3 className="font-heading text-xl font-bold text-white">Mars M&amp;M&apos;s Configurator</h3>
-                  <p className="text-[#94A3B8] leading-relaxed">
+                  <p className="text-[#94A3B8] leading-relaxed max-w-[720px]">
                     The M&amp;M&apos;s custom candy configurator at mms.com lets millions of customers design their own M&amp;M&apos;s, custom colors, custom text, photos printed on individual candies, personalized packaging. I was brought in to perform the lift-and-shift migration of the existing system and was involved across all stages of the full microservices architecture rebuild that followed. This is a high-traffic, consumer-facing application for one of the world&apos;s most recognized candy brands.
                   </p>
                   <a
@@ -157,28 +157,37 @@ export default function AboutPage() {
 
               {/* 9Round */}
               <ScrollReveal delay={100}>
-                <div className="flex flex-col gap-5 rounded-lg bg-[#0F1923] border border-[#00C8E8]/15 border-l-4 border-l-[#00C8E8] p-8 hover:shadow-[0_0_20px_rgba(0,200,232,0.08)] transition-all duration-300">
-                  <h3 className="font-heading text-xl font-bold text-white">9Round Kickboxing, Workout Display System</h3>
-                  <p className="text-[#94A3B8] leading-relaxed">
-                    9Round is an international kickboxing franchise with hundreds of locations across the US and globally. I designed and built the complete technology infrastructure behind their in-gym workout display system, from the ground up.
-                  </p>
-                  <p className="text-[#94A3B8] leading-relaxed">
-                    That meant selecting the hardware, building the display app running on gym PCs, designing the backend architecture, building the trainer content management system for uploading and scheduling daily workouts, building the real-time owner dashboard for monitoring all locations, and building the machine pairing system so franchise owners could connect and track each screen remotely. Nine screens per gym, each running a different station workout, automatically updated every day.
-                  </p>
-                  <p className="text-[#94A3B8] leading-relaxed">
-                    The result was significant enough that 9Round announced it publicly. In 2023, 9Round launched 24/7 locations, gyms that operate without on-site trainers. That model is only possible because of the display system.
-                  </p>
-                  <p className="text-[#94A3B8] leading-relaxed">
-                    The system is still live and running in gyms today.
-                  </p>
-                  <a
-                    href="https://www.prnewswire.com/news-releases/9round-kickboxing-revamps-offerings--benefits-for-franchise-owners-301977207.html"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-sm font-semibold text-[#00C8E8] hover:gap-3 transition-all duration-200 self-start"
-                  >
-                    Read the PR Newswire announcement <ExternalLink className="w-3.5 h-3.5" />
-                  </a>
+                <div className="flex flex-row gap-0 rounded-lg bg-[#0F1923] border border-[#00C8E8]/15 border-l-4 border-l-[#00C8E8] overflow-hidden hover:shadow-[0_0_20px_rgba(0,200,232,0.08)] transition-all duration-300">
+                  <div className="flex flex-col gap-5 p-8" style={{ flex: '1 1 0', minWidth: 0 }}>
+                    <h3 className="font-heading text-xl font-bold text-white">9Round Kickboxing, Workout Display System</h3>
+                    <p className="text-[#94A3B8] leading-relaxed">
+                      9Round is an international kickboxing franchise with hundreds of locations across the US and globally. I designed and built the complete technology infrastructure behind their in-gym workout display system, from the ground up.
+                    </p>
+                    <p className="text-[#94A3B8] leading-relaxed">
+                      That meant selecting the hardware, building the display app running on gym PCs, designing the backend architecture, building the trainer content management system for uploading and scheduling daily workouts, building the real-time owner dashboard for monitoring all locations, and building the machine pairing system so franchise owners could connect and track each screen remotely. Nine screens per gym, each running a different station workout, automatically updated every day.
+                    </p>
+                    <p className="text-[#94A3B8] leading-relaxed">
+                      The result was significant enough that 9Round announced it publicly. In 2023, 9Round launched 24/7 locations, gyms that operate without on-site trainers. That model is only possible because of the display system.
+                    </p>
+                    <p className="text-[#94A3B8] leading-relaxed">
+                      The system is still live and running in gyms today.
+                    </p>
+                    <a
+                      href="https://www.prnewswire.com/news-releases/9round-kickboxing-revamps-offerings--benefits-for-franchise-owners-301977207.html"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 text-sm font-semibold text-[#00C8E8] hover:gap-3 transition-all duration-200 self-start"
+                    >
+                      Read the PR Newswire announcement <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+                  </div>
+                  <div style={{ flex: '0 0 340px', position: 'relative', overflow: 'hidden' }} className="hidden md:block">
+                    <img
+                      src="/9round-display-system.jpg"
+                      alt="9Round Kickboxing workout display system"
+                      style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: '11.5% center' }}
+                    />
+                  </div>
                 </div>
               </ScrollReveal>
 
