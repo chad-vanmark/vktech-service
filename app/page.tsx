@@ -35,7 +35,7 @@ const services = [
   {
     icon: Monitor,
     title: 'Local Business Websites',
-    body: 'Professional 5–8 page sites built fast and hosted by us.',
+    body: 'Custom websites built fast and hosted by us.',
     price: 'Starting at $800',
     href: '/services#websites',
     featured: true,

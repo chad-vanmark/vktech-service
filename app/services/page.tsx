@@ -34,7 +34,7 @@ export default function ServicesPage() {
             <ScrollReveal>
               <p className="text-xs font-semibold uppercase tracking-widest text-[#00C8E8] mb-3">Services &amp; Pricing</p>
               <h1 className="font-heading text-4xl sm:text-5xl font-bold text-white text-balance max-w-2xl leading-tight">
-                Every service you need to compete online.
+                Everything your business needs online.
               </h1>
             </ScrollReveal>
           </div>
@@ -49,7 +49,7 @@ export default function ServicesPage() {
                 A professional website your customers will actually find
               </h2>
               <p className="text-[#94A3B8] text-lg mb-16 max-w-2xl">
-                Custom-built. Mobile-first. Hosted by us. No page-builder templates, no recurring platform fees.
+                Built from scratch. Mobile-first. Hosted by us. No page-builder templates, no recurring platform fees.
               </p>
             </ScrollReveal>
 
@@ -64,12 +64,14 @@ export default function ServicesPage() {
                   </div>
                   <ul className="flex flex-col gap-3">
                     {[
-                      'Upto 5 custom pages',
+                      'Custom design matched to your brand',
                       'Mobile-first, fully responsive',
-                      'Contact form',
+                      'Contact form with email notifications',
                       'Google Maps embed',
+                      'Click-to-call on every page',
                       'Basic on-page SEO',
-                      'Fast load times',
+                      'Fast load times on all devices',
+                      'Hosted and managed by us',
                     ].map((item) => (
                       <li key={item} className="flex items-center gap-3 text-white/80 text-sm">
                         <Check className="w-4 h-4 text-[#00C8E8] shrink-0" aria-hidden="true" />
@@ -103,12 +105,13 @@ export default function ServicesPage() {
                   </div>
                   <ul className="flex flex-col gap-3">
                     {[
-                      'Upto 8 custom pages',
                       'Everything in Starter',
-                      'Blog / CMS integration',
-                      'SEO-optimised throughout',
+                      'Google Business Profile setup and optimization',
+                      'SEO optimized throughout',
                       'Google Analytics setup',
+                      'Review display integration',
                       'Performance-tuned build',
+                      'Blog or news section (optional)',
                     ].map((item) => (
                       <li key={item} className="flex items-center gap-3 text-white/80 text-sm">
                         <Check className="w-4 h-4 text-[#00C8E8] shrink-0" aria-hidden="true" />
@@ -128,15 +131,42 @@ export default function ServicesPage() {
               </ScrollReveal>
             </div>
 
+            {/* Hosting & Maintenance */}
+            <ScrollReveal>
+              <div className="rounded-lg bg-[#1A2332] border border-[#00C8E8]/10 p-8 mb-6">
+                <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-6">
+                  <div>
+                    <h3 className="font-heading text-lg font-bold text-white mb-1">Hosting &amp; Maintenance</h3>
+                    <p className="text-[#94A3B8] text-sm">Your site stays live, secure, and fast.</p>
+                  </div>
+                  <span className="shrink-0 rounded-full bg-[#00C8E8]/10 border border-[#00C8E8]/25 px-4 py-1.5 text-base font-bold text-[#00C8E8] self-start">$40/mo</span>
+                </div>
+                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
+                  {[
+                    'Managed hosting on our servers',
+                    'SSL certificate (HTTPS)',
+                    'Uptime monitoring',
+                    'Deploy pipeline — updates go live with one command',
+                    'Monthly backups',
+                  ].map((item) => (
+                    <li key={item} className="flex items-center gap-3 text-white/80 text-sm">
+                      <Check className="w-4 h-4 text-[#00C8E8] shrink-0" aria-hidden="true" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+                <p className="text-[#94A3B8] text-sm">No Wix fees. No GoDaddy fees. No platform lock-in.</p>
+              </div>
+            </ScrollReveal>
+
             {/* Add-ons */}
             <ScrollReveal>
               <div className="rounded-lg bg-[#1A2332] border border-[#00C8E8]/10 p-8">
                 <h3 className="font-heading text-lg font-bold text-white mb-6">Add-ons</h3>
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {[
-                    { label: 'Hosting & maintenance', price: '$30–60/mo' },
-                    { label: 'Monthly site maintenance', price: '$50–100/mo' },
-                    { label: 'SEO audit', price: '$300–500' },
+                    { label: 'Monthly content updates', price: '$50–100/mo' },
+                    { label: 'SEO audit (one-time)', price: '$300–500' },
                   ].map((addon) => (
                     <div key={addon.label} className="flex items-center justify-between gap-4 rounded border border-[#00C8E8]/10 bg-[#0F1923] p-4">
                       <span className="text-sm text-white/70">{addon.label}</span>
