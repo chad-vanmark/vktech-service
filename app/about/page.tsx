@@ -44,9 +44,6 @@ export default function AboutPage() {
                 <p className="text-[#94A3B8] text-lg leading-relaxed mb-4">
                   Most web developers learned their craft building small sites. I learned mine rebuilding systems for Mars Inc. and designing the technology infrastructure behind an international fitness franchise. Now I bring that same standard to businesses in Upstate South Carolina.
                 </p>
-                <p className="text-[#00C8E8] font-medium">
-                  Based in Greenville, SC, serving Upstate South Carolina.
-                </p>
               </ScrollReveal>
 
               {/* Network graph graphic */}
@@ -142,7 +139,7 @@ export default function AboutPage() {
                 <div className="flex flex-col gap-5 rounded-lg bg-[#0F1923] border border-[#00C8E8]/15 border-l-4 border-l-[#00C8E8] p-8 hover:shadow-[0_0_20px_rgba(0,200,232,0.08)] transition-all duration-300">
                   <h3 className="font-heading text-xl font-bold text-white">Mars M&amp;M&apos;s Configurator</h3>
                   <p className="text-[#94A3B8] leading-relaxed max-w-[720px]">
-                    The M&amp;M&apos;s custom candy configurator at mms.com lets millions of customers design their own M&amp;M&apos;s, custom colors, custom text, photos printed on individual candies, personalized packaging. I was brought in to perform the lift-and-shift migration of the existing system and was involved across all stages of the full microservices architecture rebuild that followed. This is a high-traffic, consumer-facing application for one of the world&apos;s most recognized candy brands.
+                    The M&amp;M&apos;s custom candy configurator at mms.com lets millions of customers design their own M&amp;M&apos;s. Custom colors, custom text, photos printed on individual candies, personalized packaging. I was brought in to perform the lift-and-shift migration of the existing system and was involved across all stages of the full microservices architecture rebuild that followed. This is a high-traffic, consumer-facing application for one of the world&apos;s most recognized candy brands.
                   </p>
                   <a
                     href="https://www.mms.com/en-us/configurator"
@@ -159,12 +156,12 @@ export default function AboutPage() {
               <ScrollReveal delay={100}>
                 <div className="flex flex-row gap-0 rounded-lg bg-[#0F1923] border border-[#00C8E8]/15 border-l-4 border-l-[#00C8E8] overflow-hidden hover:shadow-[0_0_20px_rgba(0,200,232,0.08)] transition-all duration-300">
                   <div className="flex flex-col gap-5 p-8" style={{ flex: '1 1 0', minWidth: 0 }}>
-                    <h3 className="font-heading text-xl font-bold text-white">9Round Kickboxing, Workout Display System</h3>
+                    <h3 className="font-heading text-xl font-bold text-white">9Round Kickboxing: Workout Display System</h3>
                     <p className="text-[#94A3B8] leading-relaxed">
                       9Round is an international kickboxing franchise with hundreds of locations across the US and globally. I designed and built the complete technology infrastructure behind their in-gym workout display system, from the ground up.
                     </p>
                     <p className="text-[#94A3B8] leading-relaxed">
-                      That meant selecting the hardware, building the display app running on gym PCs, designing the backend architecture, building the trainer content management system for uploading and scheduling daily workouts, building the real-time owner dashboard for monitoring all locations, and building the machine pairing system so franchise owners could connect and track each screen remotely. Nine screens per gym, each running a different station workout, automatically updated every day.
+                      That meant selecting the hardware, building the display app, designing the backend, building the trainer content system for daily workout scheduling, and building the real-time owner dashboard. Franchise owners could monitor every screen in every location remotely. Nine screens per gym, each running a different station workout, automatically updated every day.
                     </p>
                     <p className="text-[#94A3B8] leading-relaxed">
                       The result was significant enough that 9Round announced it publicly. In 2023, 9Round launched 24/7 locations, gyms that operate without on-site trainers. That model is only possible because of the display system.
@@ -185,7 +182,7 @@ export default function AboutPage() {
                     <img
                       src="/9round-display-system.jpg"
                       alt="9Round Kickboxing workout display system"
-                      style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: '11.5% center' }}
+                      style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: '11% center' }}
                     />
                   </div>
                 </div>
@@ -209,7 +206,7 @@ export default function AboutPage() {
                   Those projects required getting every technical decision right. Architecture, performance, reliability, user experience. None of it was optional. When you are building for Mars or a global franchise, good enough is not a standard.
                 </p>
                 <p className="text-[#94A3B8] text-lg leading-relaxed">
-                  That is the standard I bring to every project I take on, whether it is a Fortune 500 candy brand or a business in Greenville.
+                  That is the standard I bring to every project I take on, whether it is a global candy brand or a business in Greenville.
                 </p>
                 <p className="text-[#94A3B8] text-lg leading-relaxed">
                   You are not hiring someone who learned web development last year. You are getting a decade of real engineering experience applied to your business, at a price that makes sense for where you are.
@@ -229,7 +226,13 @@ export default function AboutPage() {
               </h2>
               <div className="max-w-3xl flex flex-col gap-5">
                 <p className="text-[#94A3B8] text-lg leading-relaxed">
-                  I am Chad VanMark, based in Greenville, SC. I started VK Tech Service to do one thing: build websites and systems that actually work for the businesses that need them most, local businesses in Upstate SC that deserve the same quality of work as the enterprise clients I have spent a decade building for.
+                  I&apos;m Chad VanMark, based in Greenville, SC.
+                </p>
+                <p className="text-[#94A3B8] text-lg leading-relaxed">
+                  I spent a decade building systems for companies like Mars and 9Round. At some point I looked around and realized the businesses right here in Upstate SC were getting left behind. Stuck on Wix, paying for templates that look like everyone else&apos;s site, getting ignored by agencies chasing bigger contracts.
+                </p>
+                <p className="text-[#94A3B8] text-lg leading-relaxed">
+                  That&apos;s why I started VK Tech Service.
                 </p>
                 <p className="text-[#94A3B8] text-lg leading-relaxed">
                   Every project I take on, I build myself. No outsourcing, no junior developers, no handoffs. When you work with VK Tech Service, you work with me.
@@ -250,8 +253,8 @@ export default function AboutPage() {
                 </div>
                 <div className="hidden md:block w-px h-14 bg-white/10" aria-hidden="true" />
                 <div className="flex flex-col gap-1 md:px-16">
-                  <p className="font-heading text-[48px] font-bold leading-none text-[#00C8E8]">Full-stack</p>
-                  <p className="text-sm text-[#94A3B8]">Frontend, backend, infrastructure, and AI</p>
+                  <p className="font-heading text-[48px] font-bold leading-none text-[#00C8E8]">2 Enterprise clients</p>
+                  <p className="text-sm text-[#94A3B8]">Mars and 9Round</p>
                 </div>
                 <div className="hidden md:block w-px h-14 bg-white/10" aria-hidden="true" />
                 <div className="flex flex-col gap-1 md:pl-16">
@@ -277,7 +280,7 @@ export default function AboutPage() {
                 Ready to talk about your project?
               </h2>
               <p className="text-[#94A3B8] text-lg mb-10 max-w-md mx-auto">
-                Whether you need a website that gets your phone ringing or a custom system built from the ground up, I would like to hear about it.
+                Whether you need a website that gets your phone ringing or a system built from scratch, I&apos;d like to hear about it.
               </p>
               <a
                 href={BOOKING_URL}

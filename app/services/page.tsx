@@ -60,18 +60,19 @@ export default function ServicesPage() {
                   <div>
                     <p className="text-xs font-semibold uppercase tracking-widest text-[#00C8E8] mb-2">Starter</p>
                     <p className="font-heading text-3xl font-bold text-white">$800 <span className="text-lg font-normal text-[#94A3B8]">– $1,200</span></p>
-                    <p className="text-[#94A3B8] mt-2 text-sm">Best for: restaurants, contractors, salons, service providers</p>
                   </div>
                   <ul className="flex flex-col gap-3">
                     {[
                       'Custom design matched to your brand',
                       'Mobile-first, fully responsive',
+                      'Up to 5 sections or pages',
                       'Contact form with email notifications',
                       'Google Maps embed',
                       'Click-to-call on every page',
                       'Basic on-page SEO',
                       'Fast load times on all devices',
                       'Hosted and managed by us',
+                      '2 rounds of revisions included',
                     ].map((item) => (
                       <li key={item} className="flex items-center gap-3 text-white/80 text-sm">
                         <Check className="w-4 h-4 text-[#00C8E8] shrink-0" aria-hidden="true" />
@@ -101,11 +102,11 @@ export default function ServicesPage() {
                   <div>
                     <p className="text-xs font-semibold uppercase tracking-widest text-[#00C8E8] mb-2">Standard</p>
                     <p className="font-heading text-3xl font-bold text-white">$1,500 <span className="text-lg font-normal text-[#94A3B8]">– $2,500</span></p>
-                    <p className="text-[#94A3B8] mt-2 text-sm">Best for: businesses that want to grow and be found</p>
                   </div>
                   <ul className="flex flex-col gap-3">
                     {[
                       'Everything in Starter',
+                      'Up to 8 sections or pages',
                       'Google Business Profile setup and optimization',
                       'SEO optimized throughout',
                       'Google Analytics setup',
@@ -134,30 +135,30 @@ export default function ServicesPage() {
             {/* Hosting & Maintenance */}
             <ScrollReveal>
               <div className="rounded-lg bg-[#1A2332] border border-[#00C8E8]/10 p-8 mb-6">
-                <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-6">
-                  <div>
-                    <h3 className="font-heading text-lg font-bold text-white mb-1">Hosting &amp; Maintenance</h3>
-                    <p className="text-[#94A3B8] text-sm">Your site stays live, secure, and fast — plans from $29/mo.</p>
+                <h3 className="font-heading text-lg font-bold text-white mb-1">Hosting &amp; Maintenance</h3>
+                <p className="text-[#94A3B8] text-sm mb-8">Your site stays live, secure, and fast.</p>
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
+                  <div className="rounded border border-[#00C8E8]/10 bg-[#0F1923] p-5 flex flex-col gap-2">
+                    <p className="text-xs font-semibold uppercase tracking-widest text-[#00C8E8]">Starter</p>
+                    <p className="font-heading text-xl font-bold text-white">$29<span className="text-sm font-normal text-[#94A3B8]">/mo</span> <span className="text-sm font-normal text-[#94A3B8]">or $299/yr</span></p>
+                    <p className="text-[#94A3B8] text-sm">Hosting, SSL, and uptime monitoring. No support hours included.</p>
+                    <p className="text-[#94A3B8] text-sm">Overage work billed at $125/hr.</p>
                   </div>
-                  <div className="shrink-0 self-start text-right">
-                    <p className="text-base font-bold text-[#00C8E8]">Starting at $29/mo</p>
-                    <p className="text-xs text-[#94A3B8] mt-1 max-w-[200px]">Plans available for every budget — basic hosting to fully managed with support included.</p>
+                  <div className="rounded border border-[#00C8E8]/20 bg-[#0F1923] p-5 flex flex-col gap-2">
+                    <p className="text-xs font-semibold uppercase tracking-widest text-[#00C8E8]">Managed</p>
+                    <p className="font-heading text-xl font-bold text-white">$79<span className="text-sm font-normal text-[#94A3B8]">/mo</span> <span className="text-sm font-normal text-[#94A3B8]">or $799/yr</span></p>
+                    <p className="text-[#94A3B8] text-sm">Everything in Starter, plus 1 hour of support and updates included per month.</p>
+                    <p className="text-[#94A3B8] text-sm">Overage work billed at $125/hr.</p>
+                  </div>
+                  <div className="rounded border border-[#00C8E8]/20 bg-[#0F1923] p-5 flex flex-col gap-2">
+                    <p className="text-xs font-semibold uppercase tracking-widest text-[#00C8E8]">Premium</p>
+                    <p className="font-heading text-xl font-bold text-white">$149<span className="text-sm font-normal text-[#94A3B8]">/mo</span> <span className="text-sm font-normal text-[#94A3B8]">or $1,499/yr</span></p>
+                    <p className="text-[#94A3B8] text-sm">Everything in Starter, plus 5 hours of support and updates included per month.</p>
+                    <p className="text-[#94A3B8] text-sm">Overage work billed at $125/hr.</p>
                   </div>
                 </div>
-                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
-                  {[
-                    'Managed hosting on our servers',
-                    'SSL certificate (HTTPS)',
-                    'Uptime monitoring',
-                    'Deploy pipeline — updates go live with one command',
-                    'Monthly backups',
-                  ].map((item) => (
-                    <li key={item} className="flex items-center gap-3 text-white/80 text-sm">
-                      <Check className="w-4 h-4 text-[#00C8E8] shrink-0" aria-hidden="true" />
-                      {item}
-                    </li>
-                  ))}
-                </ul>
+                <p className="text-[#94A3B8] text-sm mb-3">Annual plans save you money vs monthly. Ask about 3-year plans for maximum savings.</p>
+                <p className="text-[#94A3B8] text-sm mb-6">Pay annually and save. Starter $299/yr, Managed $799/yr, Premium $1,499/yr.</p>
                 <p className="text-[#94A3B8] text-sm">No Wix fees. No GoDaddy fees. No platform lock-in.</p>
               </div>
             </ScrollReveal>
@@ -167,9 +168,9 @@ export default function ServicesPage() {
               <div className="rounded-lg bg-[#1A2332] border border-[#00C8E8]/10 p-8">
                 <h3 className="font-heading text-lg font-bold text-white mb-6">Add-ons</h3>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                  <div className="rounded border border-[#00C8E8]/10 bg-[#0F1923] p-4 flex flex-col gap-1 sm:col-span-3">
+                  <div className="flex items-center justify-between gap-4 rounded border border-[#00C8E8]/10 bg-[#0F1923] p-4">
                     <span className="text-sm text-white/70">Content updates &amp; support</span>
-                    <span className="text-xs text-[#94A3B8]">Included in Managed and Premium hosting plans. Available à la carte on Basic hosting from $125/hr.</span>
+                    <span className="text-sm font-semibold text-[#00C8E8] shrink-0">$125/hr (included in Managed and Premium plans)</span>
                   </div>
                   {[
                     { label: 'SEO audit (one-time)', price: '$300–500' },
@@ -206,12 +207,6 @@ export default function ServicesPage() {
                   title: 'Web apps & custom functionality',
                   price: '$3,000 – $8,000',
                   body: 'Custom portals, booking systems, dashboards, and interactive features built to your exact specs.',
-                },
-                {
-                  id: 'seo-retainer',
-                  title: 'Ongoing SEO retainer',
-                  price: '$500 – $1,200/mo',
-                  body: 'Monthly content, technical SEO, and link-building to keep your rankings climbing.',
                 },
                 {
                   id: 'backend-api',
@@ -262,7 +257,7 @@ export default function ServicesPage() {
                 Technical consulting
               </h2>
               <p className="text-[#94A3B8] text-lg mb-4 max-w-2xl">
-                Systems architecture, AI strategy, AWS optimization &mdash; for companies that need real technical depth.
+                Systems architecture, AI strategy, AWS optimization, for companies that need real technical depth.
               </p>
               <p className="text-[#00C8E8] text-base font-medium italic mb-16">
                 &ldquo;You&apos;re paying for 10 years of hard-won experience, not just hours.&rdquo;
