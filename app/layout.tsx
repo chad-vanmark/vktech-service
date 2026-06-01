@@ -17,6 +17,10 @@ const dmSans = DM_Sans({
 })
 
 export const metadata: Metadata = {
+  icons: {
+    icon: '/images/vktech-logo.png',
+    apple: '/images/vktech-logo.png',
+  },
   title: 'VKTech — Modern Websites & AI Systems for Growing Businesses',
   description:
     'VKTech builds fast, professional websites and intelligent backend systems for local businesses in Upstate South Carolina. Book your free website proposal today.',

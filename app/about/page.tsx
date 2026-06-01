@@ -1,35 +1,16 @@
 import type { Metadata } from 'next'
-import Link from 'next/link'
-import { ArrowRight, Layers, MapPin, Server } from 'lucide-react'
+import { ArrowRight, ExternalLink } from 'lucide-react'
 import Navbar from '@/components/navbar'
 import Footer from '@/components/footer'
 import ScrollReveal from '@/components/scroll-reveal'
 
 export const metadata: Metadata = {
-  title: 'About — VKTech',
+  title: 'About — VK Tech Service',
   description:
-    'VKTech is a real developer — not an agency. 10+ years of backend development and complex systems architecture, now serving local businesses in Upstate South Carolina.',
+    'Enterprise-grade development for businesses in Upstate SC. Built the systems behind Mars M&M\'s and 9Round Kickboxing. Now building for Greenville.',
 }
 
 const BOOKING_URL = 'https://calendly.com/vktech-service/free-website-proposal'
-
-const differentiators = [
-  {
-    icon: Layers,
-    title: 'Technical depth',
-    body: 'Most web designers don\'t know backend. Most backend devs don\'t do websites. VKTech does both — so you get a site that looks right and performs like real software.',
-  },
-  {
-    icon: MapPin,
-    title: 'Local and accountable',
-    body: 'You can call, meet in person, and get a real answer. Not a ticket number. Not an offshore support queue.',
-  },
-  {
-    icon: Server,
-    title: 'We host what we build',
-    body: 'We don\'t hand it off to a third party and walk away. We keep it running, keep it updated, and fix it when something breaks.',
-  },
-]
 
 export default function AboutPage() {
   return (
@@ -53,18 +34,18 @@ export default function AboutPage() {
           <div className="relative mx-auto max-w-7xl px-6">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               <ScrollReveal>
-                <p className="text-xs font-semibold uppercase tracking-widest text-[#00C8E8] mb-4">About VKTech</p>
+                <p className="text-xs font-semibold uppercase tracking-widest text-[#00C8E8] mb-4">About VK Tech Service</p>
                 <h1 className="font-heading text-4xl sm:text-5xl font-bold text-white text-balance leading-tight mb-6">
-                  A real developer, not an agency.
+                  Enterprise experience. Built for your business.
                 </h1>
                 <p className="text-[#94A3B8] text-lg leading-relaxed mb-4">
-                  10+ years of backend development and complex system architecture. Built the systems behind the scenes that power serious companies — from AWS infrastructure to AI integrations to high-traffic web applications.
+                  I&apos;ve built for Mars and 9Round. Now I&apos;m building for Greenville.
                 </p>
                 <p className="text-[#94A3B8] text-lg leading-relaxed mb-4">
-                  Now bringing that same technical depth to local businesses who deserve more than a drag-and-drop template and a support ticket.
+                  Most web developers learned their craft building small sites. I learned mine rebuilding systems for Mars Inc. and designing the technology infrastructure behind an international fitness franchise. Now I bring that same standard to businesses in Upstate South Carolina.
                 </p>
                 <p className="text-[#00C8E8] font-medium">
-                  Based in Greenville, SC &mdash; serving Upstate South Carolina.
+                  Based in Greenville, SC, serving Upstate South Carolina.
                 </p>
               </ScrollReveal>
 
@@ -144,29 +125,108 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* ── What makes VKTech different ── */}
+        {/* ── What I've built ── */}
         <section className="bg-[#1A2332] py-24">
           <div className="mx-auto max-w-7xl px-6">
             <ScrollReveal>
               <div className="w-8 h-px bg-[#00C8E8] mb-6" aria-hidden="true" />
               <h2 className="font-heading text-3xl sm:text-4xl font-bold text-white text-balance mb-16 max-w-xl">
-                What makes VKTech different
+                What I&apos;ve built
               </h2>
             </ScrollReveal>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {differentiators.map((item, i) => (
-                <ScrollReveal key={item.title} delay={i * 100}>
-                  <div className="flex flex-col gap-5 rounded-lg bg-[#0F1923] border border-[#00C8E8]/15 border-l-4 border-l-[#00C8E8] p-8 hover:shadow-[0_0_20px_rgba(0,200,232,0.08)] hover:-translate-y-0.5 transition-all duration-300 h-full">
-                    <div className="flex items-center justify-center w-10 h-10 rounded bg-[#00C8E8]/10 border border-[#00C8E8]/20 self-start">
-                      <item.icon className="w-4 h-4 text-[#00C8E8]" aria-hidden="true" />
-                    </div>
-                    <h3 className="font-heading text-xl font-bold text-white">{item.title}</h3>
-                    <p className="text-[#94A3B8] leading-relaxed text-sm">{item.body}</p>
-                  </div>
-                </ScrollReveal>
-              ))}
+            <div className="flex flex-col gap-6">
+
+              {/* M&M's Configurator */}
+              <ScrollReveal>
+                <div className="flex flex-col gap-5 rounded-lg bg-[#0F1923] border border-[#00C8E8]/15 border-l-4 border-l-[#00C8E8] p-8 hover:shadow-[0_0_20px_rgba(0,200,232,0.08)] transition-all duration-300">
+                  <h3 className="font-heading text-xl font-bold text-white">Mars M&amp;M&apos;s Configurator</h3>
+                  <p className="text-[#94A3B8] leading-relaxed">
+                    The M&amp;M&apos;s custom candy configurator at mms.com lets millions of customers design their own M&amp;M&apos;s, custom colors, custom text, photos printed on individual candies, personalized packaging. I was brought in to perform the lift-and-shift migration of the existing system and was involved across all stages of the full microservices architecture rebuild that followed. This is a high-traffic, consumer-facing application for one of the world&apos;s most recognized candy brands.
+                  </p>
+                  <a
+                    href="https://www.mms.com/en-us/configurator"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-sm font-semibold text-[#00C8E8] hover:gap-3 transition-all duration-200 self-start"
+                  >
+                    See it live at mms.com <ExternalLink className="w-3.5 h-3.5" />
+                  </a>
+                </div>
+              </ScrollReveal>
+
+              {/* 9Round */}
+              <ScrollReveal delay={100}>
+                <div className="flex flex-col gap-5 rounded-lg bg-[#0F1923] border border-[#00C8E8]/15 border-l-4 border-l-[#00C8E8] p-8 hover:shadow-[0_0_20px_rgba(0,200,232,0.08)] transition-all duration-300">
+                  <h3 className="font-heading text-xl font-bold text-white">9Round Kickboxing, Workout Display System</h3>
+                  <p className="text-[#94A3B8] leading-relaxed">
+                    9Round is an international kickboxing franchise with hundreds of locations across the US and globally. I designed and built the complete technology infrastructure behind their in-gym workout display system, from the ground up.
+                  </p>
+                  <p className="text-[#94A3B8] leading-relaxed">
+                    That meant selecting the hardware, building the display app running on gym PCs, designing the backend architecture, building the trainer content management system for uploading and scheduling daily workouts, building the real-time owner dashboard for monitoring all locations, and building the machine pairing system so franchise owners could connect and track each screen remotely. Nine screens per gym, each running a different station workout, automatically updated every day.
+                  </p>
+                  <p className="text-[#94A3B8] leading-relaxed">
+                    The result was significant enough that 9Round announced it publicly. In 2023, 9Round launched 24/7 locations, gyms that operate without on-site trainers. That model is only possible because of the display system.
+                  </p>
+                  <p className="text-[#94A3B8] leading-relaxed">
+                    The system is still live and running in gyms today.
+                  </p>
+                  <a
+                    href="https://www.prnewswire.com/news-releases/9round-kickboxing-revamps-offerings--benefits-for-franchise-owners-301977207.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-sm font-semibold text-[#00C8E8] hover:gap-3 transition-all duration-200 self-start"
+                  >
+                    Read the PR Newswire announcement <ExternalLink className="w-3.5 h-3.5" />
+                  </a>
+                </div>
+              </ScrollReveal>
+
             </div>
+          </div>
+        </section>
+
+        {/* ── Why this matters ── */}
+        <section className="relative bg-[#0F1923] py-24">
+          <div className="hero-grid-bg" aria-hidden="true" />
+          <div className="relative mx-auto max-w-7xl px-6">
+            <ScrollReveal>
+              <div className="w-8 h-px bg-[#00C8E8] mb-6" aria-hidden="true" />
+              <h2 className="font-heading text-3xl sm:text-4xl font-bold text-white text-balance mb-8 max-w-xl">
+                Why this matters for your business
+              </h2>
+              <div className="max-w-3xl flex flex-col gap-5">
+                <p className="text-[#94A3B8] text-lg leading-relaxed">
+                  Those projects required getting every technical decision right. Architecture, performance, reliability, user experience. None of it was optional. When you are building for Mars or a global franchise, good enough is not a standard.
+                </p>
+                <p className="text-[#94A3B8] text-lg leading-relaxed">
+                  That is the standard I bring to every project I take on, whether it is a Fortune 500 candy brand or a business in Greenville.
+                </p>
+                <p className="text-[#94A3B8] text-lg leading-relaxed">
+                  You are not hiring someone who learned web development last year. You are getting a decade of real engineering experience applied to your business, at a price that makes sense for where you are.
+                </p>
+              </div>
+            </ScrollReveal>
+          </div>
+        </section>
+
+        {/* ── Who you are working with ── */}
+        <section className="bg-[#1A2332] py-24">
+          <div className="mx-auto max-w-7xl px-6">
+            <ScrollReveal>
+              <div className="w-8 h-px bg-[#00C8E8] mb-6" aria-hidden="true" />
+              <h2 className="font-heading text-3xl sm:text-4xl font-bold text-white text-balance mb-8 max-w-xl">
+                Who you are working with
+              </h2>
+              <div className="max-w-3xl flex flex-col gap-5">
+                <p className="text-[#94A3B8] text-lg leading-relaxed">
+                  I am Chad VanMark, based in Greenville, SC. I started VK Tech Service to do one thing: build websites and systems that actually work for the businesses that need them most, local businesses in Upstate SC that deserve the same quality of work as the enterprise clients I have spent a decade building for.
+                </p>
+                <p className="text-[#94A3B8] text-lg leading-relaxed">
+                  Every project I take on, I build myself. No outsourcing, no junior developers, no handoffs. When you work with VK Tech Service, you work with me.
+                </p>
+              </div>
+            </ScrollReveal>
           </div>
         </section>
 
@@ -205,18 +265,20 @@ export default function AboutPage() {
             <ScrollReveal>
               <div className="inline-block w-10 h-px bg-[#00C8E8] mb-10" aria-hidden="true" />
               <h2 className="font-heading text-3xl sm:text-4xl font-bold text-white text-balance mb-6 max-w-xl mx-auto">
-                Ready to build something that actually works?
+                Ready to talk about your project?
               </h2>
               <p className="text-[#94A3B8] text-lg mb-10 max-w-md mx-auto">
-                {"Book a free proposal call. We'll show you what's possible before you commit to anything."}
+                Whether you need a website that gets your phone ringing or a custom system built from the ground up, I would like to hear about it.
               </p>
-              <Link
-                href="/proposal"
+              <a
+                href={BOOKING_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded bg-[#00C8E8] px-9 py-4 text-base font-semibold text-[#0F1923] transition-all duration-200 hover:bg-[#00C8E8]/90 hover:shadow-[0_0_32px_rgba(0,200,232,0.4)] hover:gap-3"
               >
-                Book Your Free Proposal
+                Book a free call
                 <ArrowRight className="w-4 h-4" />
-              </Link>
+              </a>
               <p className="mt-6 text-sm text-white/35 tracking-wide">
                 No credit card &nbsp;&middot;&nbsp; No commitment &nbsp;&middot;&nbsp; Response within 24 hours
               </p>
