@@ -163,10 +163,11 @@ export default function ServicesPage() {
             <ScrollReveal>
               <div className="rounded-lg bg-[#1A2332] border border-[#00C8E8]/10 p-8">
                 <h3 className="font-heading text-lg font-bold text-white mb-6">Add-ons</h3>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                   {[
                     { label: 'Monthly content updates', price: '$50–100/mo' },
                     { label: 'SEO audit (one-time)', price: '$300–500' },
+                    { label: 'Google Business Profile setup', price: '$150–300 (one-time)' },
                   ].map((addon) => (
                     <div key={addon.label} className="flex items-center justify-between gap-4 rounded border border-[#00C8E8]/10 bg-[#0F1923] p-4">
                       <span className="text-sm text-white/70">{addon.label}</span>
@@ -199,18 +200,6 @@ export default function ServicesPage() {
                   title: 'Web apps & custom functionality',
                   price: '$3,000 – $8,000',
                   body: 'Custom portals, booking systems, dashboards, and interactive features built to your exact specs.',
-                },
-                {
-                  id: 'ai-chatbot',
-                  title: 'AI chatbot / FAQ integration',
-                  price: '$1,500 – $3,500',
-                  body: 'A trained chatbot that answers customer questions 24/7, captures leads, and hands off to your team when needed.',
-                },
-                {
-                  id: 'seo-retainer',
-                  title: 'Ongoing SEO retainer',
-                  price: '$500 – $1,200/mo',
-                  body: 'Monthly content, technical SEO, and link-building to keep your rankings climbing.',
                 },
                 {
                   id: 'backend-api',
