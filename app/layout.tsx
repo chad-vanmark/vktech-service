@@ -50,7 +50,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${syne.variable} ${dmSans.variable} bg-[#0F1923]`}>
+    <html lang="en" data-scroll-behavior="smooth" className={`${syne.variable} ${dmSans.variable} bg-[#0F1923]`}>
       <body className="font-sans antialiased">{children}</body>
     </html>
   )
