@@ -329,7 +329,7 @@ export default function HomePage() {
                       : ''
                   }`}
                 >
-                  <span className="font-heading text-[48px] font-bold leading-none text-[#00C8E8]">
+                  <span className="font-heading text-3xl sm:text-[48px] font-bold leading-none text-[#00C8E8]">
                     {stat.value}
                   </span>
                   <span className="text-sm text-[#94A3B8] text-center">{stat.label}</span>

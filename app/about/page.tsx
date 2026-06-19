@@ -151,11 +151,11 @@ export default function AboutPage() {
                       See it live at mms.com <ExternalLink className="w-3.5 h-3.5" />
                     </a>
                   </div>
-                  <div style={{ flex: '0 0 340px', position: 'relative', overflow: 'hidden' }} className="hidden md:block">
+                  <div style={{ flex: '0 0 340px', position: 'relative', overflow: 'hidden', backgroundColor: '#ffffff' }} className="hidden md:block">
                     <img
                       src="/mnm-configurator.png"
                       alt="M&M's custom candy configurator showing personalized M&M's"
-                      style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 15%' }}
+                      style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'left 10%', transform: 'scale(1.05)', transformOrigin: 'left top' }}
                     />
                   </div>
                 </div>
