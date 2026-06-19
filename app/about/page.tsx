@@ -226,7 +226,7 @@ export default function AboutPage() {
               </h2>
               <div className="max-w-3xl flex flex-col gap-5">
                 <p className="text-[#94A3B8] text-lg leading-relaxed">
-                  I&apos;m Chad VanMark, based in Greenville, SC.
+                  I&apos;m Chad Vandermark, based in Greenville, SC.
                 </p>
                 <p className="text-[#94A3B8] text-lg leading-relaxed">
                   I spent a decade building systems for companies like Mars and 9Round. At some point I looked around and realized the businesses right here in Upstate SC were getting left behind. Stuck on Wix, paying for templates that look like everyone else&apos;s site, getting ignored by agencies chasing bigger contracts.
