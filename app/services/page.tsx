@@ -168,17 +168,15 @@ export default function ServicesPage() {
               <div className="rounded-lg bg-[#1A2332] border border-[#00C8E8]/10 p-8">
                 <h3 className="font-heading text-lg font-bold text-white mb-6">Add-ons</h3>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                  <div className="flex items-center justify-between gap-4 rounded border border-[#00C8E8]/10 bg-[#0F1923] p-4">
-                    <span className="text-sm text-white/70">Content updates &amp; support</span>
-                    <span className="text-sm font-semibold text-[#00C8E8] shrink-0">$125/hr (included in Managed and Premium plans)</span>
-                  </div>
                   {[
-                    { label: 'SEO audit (one-time)', price: '$300–500' },
-                    { label: 'Google Business Profile setup', price: '$150–300 (one-time)' },
+                    { label: 'Content updates & support', price: '$125/hr', note: 'Included in Managed and Premium plans' },
+                    { label: 'SEO audit', price: '$300–500', note: 'One-time' },
+                    { label: 'Google Business Profile setup', price: '$150–300', note: 'One-time' },
                   ].map((addon) => (
-                    <div key={addon.label} className="flex items-center justify-between gap-4 rounded border border-[#00C8E8]/10 bg-[#0F1923] p-4">
+                    <div key={addon.label} className="flex flex-col gap-2 rounded border border-[#00C8E8]/10 bg-[#0F1923] p-5">
                       <span className="text-sm text-white/70">{addon.label}</span>
-                      <span className="text-sm font-semibold text-[#00C8E8] shrink-0">{addon.price}</span>
+                      <span className="text-lg font-semibold text-[#00C8E8]">{addon.price}</span>
+                      <span className="text-xs text-[#94A3B8]">{addon.note}</span>
                     </div>
                   ))}
                 </div>
